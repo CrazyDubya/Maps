@@ -1,0 +1,9 @@
+{
+  "name": "nyc-transportation-map",
+  "version": "0.1.0",
+  "description": "Base NYC map with transportation layers and routing demo",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo 'No tests'"
+  }
+}

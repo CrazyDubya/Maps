@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "FDR Drive Segment"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.9712, 40.7500],
+          [-73.9690, 40.7550]
+        ]
+      }
+    }
+  ]
+}

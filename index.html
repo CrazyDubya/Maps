@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYC Transportation Map</title>
+  <link href="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+      font-family: sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label for="mode1">Mode 1:</label>
+    <select id="mode1">
+      <option value="driving">Driving</option>
+      <option value="walking">Walking</option>
+      <option value="cycling">Cycling</option>
+    </select>
+    <label for="mode2">Mode 2:</label>
+    <select id="mode2">
+      <option value="none">None</option>
+      <option value="driving">Driving</option>
+      <option value="walking">Walking</option>
+      <option value="cycling">Cycling</option>
+    </select>
+    <label for="depart">Depart:</label>
+    <input type="datetime-local" id="depart" />
+    <label for="deadline">Deadline:</label>
+    <input type="datetime-local" id="deadline" />
+    <label><input type="checkbox" id="prefer-scenic" /> Prefer scenic</label>
+    <label><input type="checkbox" id="avoid-danger" /> Avoid dangerous</label>
+    <div id="info"></div>
+    <p>Click map to set start and end points, or start, via, end for mixed trips.</p>
+  </div>
+  <div id="map"></div>
+  <script src="https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js"></script>
+  <script src="https://unpkg.com/osmtogeojson@3.0.0/osmtogeojson.min.js"></script>
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
