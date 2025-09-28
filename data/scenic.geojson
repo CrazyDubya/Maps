@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Central Park Scenic"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.9731, 40.7644],
+          [-73.9712, 40.7671]
+        ]
+      }
+    }
+  ]
+}
